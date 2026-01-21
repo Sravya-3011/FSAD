@@ -1,0 +1,17 @@
+<<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+       <context:component-scan base-package="com.klu.model"/>
+       <bean id="order" class="com.klu.model.ProductOrder">
+       <constructor-arg value="2004"></constructor-arg>
+       <constructor-arg value="Sravyanjali"></constructor-arg>
+       <property name="productName" value="Charger"/>
+       <property name="quantity" value="4"/>
+		<property name="Category" value="Wire"/>
+       </bean>
+</beans>
